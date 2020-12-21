@@ -1,0 +1,39 @@
+#folderInfo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    font-size: 4vh;
+    border: solid;
+    width: 100%;
+  }
+  
+  #folderInfo input {
+    margin: 20px 0;
+    height: 2em;
+    text-align: center;
+    font-size: 3vh;
+  }
+  
+  #folderInfo .buttons {
+    display: flex;
+    width: 75%;
+    font-size: 3vh;
+  }
+  
+  #folderInfo button {
+    padding: 5px 20px;
+  }
+  
+  #folder-error-label {
+    font-size: 14px;
+    color: red;
+  }
+  
+  @media all and (max-width: 600px) {
+    #folderInfo {
+    width: initial;
+    }
+  }
