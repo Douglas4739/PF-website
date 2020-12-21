@@ -1,0 +1,138 @@
+@keyframes emptyNote {
+    0% {color: rgb(194, 0, 0);}
+    50% {color: rgba(26, 6, 6, 0.493);}
+    100% {color: rgb(202, 0, 0)}
+  }
+  
+  .animated {
+    animation-name: emptyNote;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  .note-preview {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    box-sizing: border-box;
+    min-height: 200px;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 10px 75px 10px 0;
+    border-bottom-width: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 2;
+    --note-height: 88px;
+    background-color: #265597;
+    color: #cacaca;
+    margin-bottom: 8px;
+    max-width: 380px;
+    padding: 8px 0 8px 8px;
+    position: relative;
+  }
+  
+  .note-preview a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(59, 49, 100);
+    width: calc(100% - 25px);
+    height: 3em;
+    margin-bottom: 10px;
+    text-decoration: none;
+    align-self: center;
+  }
+  
+  .note-preview a:focus {
+    background-color: rgba(226, 12, 12, 0.281);
+  }
+  
+  .note-preview p {
+    text-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+    align-self: center;
+    width: 100%;
+    height: 2.5em;
+    text-align: center;
+    cursor: pointer;
+    z-index: -1;
+  }
+  
+  .note-preview:hover {
+    background-color: rgba(22, 88, 119, 0.781)
+  }
+  
+  .note-preview button {
+    align-self: flex-end;
+    justify-self: flex-start;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100px;
+    padding: 5px 0;
+    box-shadow: 2px 2px gray;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  i {
+    color: rgb(0, 0, 0);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-right: -25px;
+    position: relative;
+  }
+  
+  #name-label, #content-label {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: none;
+    color: rgb(199, 0, 0);
+  }
+  
+  @media all and (max-width: 600px) {
+    .note-preview {
+      text-align: center;
+      padding: 0;
+      width: 100%;
+    }
+  
+    .note-preview a {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+    }
+  
+    .note-preview p {
+      margin-top: 0;
+    }
+  
+    .note-preview button {
+      margin-left: 15px;
+      align-self: center;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 20px;
+    }
+  }
