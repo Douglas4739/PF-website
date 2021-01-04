@@ -1,1 +1,0 @@
-export const Local_Server_Endpoint= 'http://localhost:9090';
